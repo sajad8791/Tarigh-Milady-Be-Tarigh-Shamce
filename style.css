@@ -1,0 +1,156 @@
+body {
+  background: linear-gradient(#141e30, #243b55);
+}
+
+#container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+#calendar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  background-color: #011124;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+#top-side-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(187, 57, 10);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  font-family: B Nazanin;
+  font-size: 24px;
+  color: white;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#input-container {
+  position: relative;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+#input-container input[type=date] {
+  width: 50%;
+  height: 40%;
+  border-radius: 10px;
+  font-family: B Nazanin;
+  font-size: 22px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  background-color: #044c9e;
+}
+
+#reverse-container {
+  position: relative;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#input-container input[type=button] {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  font-family: B Nazanin;
+  font-size: 18px;
+  background-color: rgb(165, 48, 6);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+#input-container input[type=button]:hover {
+  width: 50%;
+  background-color: green;
+}
+
+#reverse-container i {
+  font-size: 40px;
+  color: white;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+#reverse-container i:hover {
+  color: orange;
+}
+
+#time-output {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 40px;
+}
+
+#time-output span {
+  font-size: 20px;
+  color: white;
+  opacity: 0;
+  font-family: B Nazanin;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@font-face {
+  font-family: B Nazanin;
+  src: url(../B\ Koodak\ Bold_0.ttf);
+}
